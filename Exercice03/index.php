@@ -9,12 +9,12 @@
     <?php
 
 
-$admin = true;
+$admin = false;
 
     if($admin == TRUE){
         echo '<p> Bienvenue dans votre domaine monsieur</p> <br> <a href=#>Lien externe</a>';
     } else {
-        echo '<p style= background-color:red;> Page réservée aux <p style= font-size: bold; admins</p> </p>';
+        echo '<p style= background-color:red;> Page réservée aux admins </p>';
     }
     ?>
 </body>
