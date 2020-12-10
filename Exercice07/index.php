@@ -7,6 +7,7 @@ $userInfos = [
     'level' => '30'
 ];
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,19 +20,17 @@ $userInfos = [
         font-weight: bold;
 
     </style>
-</head>
-<body>
-    <h1>array</h1>
-    <?php
+    </head>
+    <body>
+        <h1>array</h1>
+        <?php
 
 
-
-
-echo 'Le pseudo est <p class=style>' .$userInfos['pseudo'] . 
-' </p> son age est de <p class=style> ' . $userInfos['age'] . 
-' </p> ans. Il vient de <p class=style>' .$userInfos['city']  . 
-'</p>. Son rank est <p class=style>' . $userInfos['rank'] . 
-' </p> et son niveau est de <p. class=style> ' .$userInfos['level'] . '</p>. ';
+echo 'Le pseudo est <span class=style>' .$userInfos['pseudo'] . 
+' </span> son age est de <span class=style> ' . $userInfos['age'] . 
+' </span> ans. Il vient de <span class=style>' .$userInfos['city']  . 
+'</span>. Son rank est <span class=style>' . $userInfos['rank'] . 
+' </span> et son niveau est de <span. class=style> ' .$userInfos['level'] . '</span>. ';
 
 
 ?>
