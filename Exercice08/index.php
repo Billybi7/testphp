@@ -7,7 +7,7 @@
             'age' => '24',
             'country' => 'france',
             'city' => 'mulhouse',
-            'countrys' => [
+            'countrys' => [ 'visited' =>
                 'algérie', 'angleterre'
             ],
         ],
@@ -16,7 +16,7 @@
             'age' => '20',
             'country' => 'france',
             'city' => 'strasbourg',
-            'countrys' => [
+            'countrys' => [ 'visited' =>
                 'allemagne', 'maroc'
             ],
         ],
@@ -25,7 +25,7 @@
             'age' => '16',
             'country' => 'france',
             'city' => 'rixheim',
-            'countrys' => [
+            'countrys' => [ 'visited' => 
                 'espagne', 'italie'
             ],
         ],
@@ -34,7 +34,7 @@
             'age' => '13',
             'country' => 'france',
             'city' => 'kingersheim',
-            'countrys' => [
+            'countrys' => [ 'visited' =>
                 'suisse', 'canada'
             ],
         ],
@@ -43,7 +43,7 @@
             'age' => '4',
             'country' => 'france',
             'city' => 'lutterbach',
-            'countrys' => [''],
+            'countrys' => [],
         ],
     ];            
 
@@ -62,12 +62,16 @@
     foreach( $users as $user){
        
         echo '<h2> ' .$user['name']. '</h2> <p> Âgé de ' .$user['age']. ' vivant en ' .$user['country']. ' à ' .$user['city']. '. </p>';{
-            if(count($user["countrys"]) > 1) {
+            if(count($user["countrys"]) > 0) {
+
 
                 ?>
                 <ul>
                 <?php
-                echo '<br> Voici les pays visités ' .$user['countrys'][0]. ' et ' .$user['countrys'][1]. ".";
+                echo '<br><> Voici les pays visités : ';
+                    foreach($users as $visted){
+                       echo '<> ' .$user['countrys']["visited"]. '</>';
+                    }
                 ?>
                 </ul>
                 <?php
