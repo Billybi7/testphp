@@ -17,8 +17,8 @@
 
 
 for($i = 0; $i < 5000; $i++) {
-    
-    echo '<li>'.++$i.'</li>';
+    // Au lieu d'afficher $i qui aura toujours 1 de retard, on affiche $i + 1 pour corriger ce décalage
+    echo '<li>'. ($i +1) .'</li>';
 }
 ?>
 </ul>
