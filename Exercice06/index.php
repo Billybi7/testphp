@@ -1,5 +1,5 @@
 <?php
-$name = ['billy','bobi','bibi','bobo', 'baba', 'jojo', 'jodie', 'jiji', 'lili', 'lola', 'jo'];
+$names = ['billy','bobi','bibi','bobo', 'baba', 'jojo', 'jodie', 'jiji', 'lili', 'lola', 'jo'];
 $i =0;
 ?>
 
@@ -14,13 +14,17 @@ $i =0;
     <ul>
     <?php
 
-    while($i < 11){
+    while($i < 10){
 
-       echo '<li>' .$i.' longueur ' .$name[$i]++ . ' index </li> <br>';
+       echo '<li>' .$i.' longueur ' .$names[$i] . ' index </li> <br>';
        $i++;
     }
-
-
+/*
+    $arraylength = count($names);
+    for($i =0; $i < $arraylength; $i++) {
+            echo '<li>'. $names[$i].'</li>';
+    }
+*/
     ?>
 
     </ul>
