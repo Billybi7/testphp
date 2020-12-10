@@ -16,14 +16,19 @@ $i =0;
 <ul>
 <?php
 
-
-
+/* 
 while($i < 1){
     $i++;
     while($i <= 5000) {
+    
         echo '<li>'.$i.'</li>';
         $i++;
     }
+}
+*/
+while($i < 5000) {
+    
+    echo '<li>'.++$i.'</li>';
 }
 ?>
 </ul>
