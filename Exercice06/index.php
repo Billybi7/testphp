@@ -16,7 +16,7 @@ $i =0;
 
     while($i < 11){
 
-       echo '<li> longueur ' .$name[$i]++ . ' index </li> <br>';
+       echo '<li>' .$i.' longueur ' .$name[$i]++ . ' index </li> <br>';
        $i++;
     }
 
