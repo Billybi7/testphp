@@ -27,7 +27,11 @@ $userInfos = [
 
 
 
-echo 'Le pseudo est <p class=style>' .$userInfos['pseudo'] . ' </p> son age est de <p class=style> ' . $userInfos['age'] . ' </p> ans. Il vient de <p class=style>' .$userInfos['city']  . '</p>. Son rank est <p class=style>' . $userInfos['rank'] . ' </p> et son niveau est de <p. class=style> ' .$userInfos['level'] . '</p>. ';
+echo 'Le pseudo est <p class=style>' .$userInfos['pseudo'] . 
+' </p> son age est de <p class=style> ' . $userInfos['age'] . 
+' </p> ans. Il vient de <p class=style>' .$userInfos['city']  . 
+'</p>. Son rank est <p class=style>' . $userInfos['rank'] . 
+' </p> et son niveau est de <p. class=style> ' .$userInfos['level'] . '</p>. ';
 
 
 ?>
