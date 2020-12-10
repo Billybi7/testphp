@@ -48,8 +48,7 @@
     <?php
     foreach( $users as $user){
        
-        echo '<h2> ' .$user['name']. '</h2> <p> Âgé de ' .$user['age']. ' vivant en ' .$user['country']. ' à ' .$user['city']. '.';
-        $user++;
+        echo '<h2> ' .$user['name']. '</h2> <p> Âgé de ' .$user['age']. ' vivant en ' .$user['country']. ' à ' .$user['city']. '. </p>';
         
     }
 
