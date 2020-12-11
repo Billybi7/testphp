@@ -8,5 +8,6 @@ echo date('l j F Y, H\h i\m s\s ');
 // Exercice 10-b : Chercher à afficher la date avec strftime en français en vous aidant de google et php.net
 
 setlocale(LC_TIME, ['fr', 'fra', 'fr_FR']);
-echo strftime("%A %d %B %Y, %Hh %Mm %Ss");
+echo strftime("%A %d %B %Y, %Hh %Mm %Ss <hr>");
 
+echo utf8_encode(strftime("%A %d %B %Y, %Hh %Mm %Ss"));
