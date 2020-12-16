@@ -1,27 +1,24 @@
 <?php
-if(
-    isset($_POST['email']) && isset($_POST['age']) && isset($_POST['link'])){
+if(isset($_POST['email']) && isset($_POST['age']) && isset($_POST['link'])){
 
 
-    // 2ème étape : bloc des vérifs (1 champ = 1 structure conditionnelle) : consiste pour chaque champ à vérifier qu'il contient bien des données valides
-    if(filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
-        //$succes[] = "Yes email";
-    } else {
-    $errors[] = "Entrer une adresse valide !";
-    }
-    if(filter_var($_POST["age"],FILTER_VALIDATE_INT) && $_POST['age'] < 151 && $_POST['age'] > 0) {
-       // $succes[] = "Yes age";
-    } else {
+
+    if(!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
+       
+        $errors[] = "Entrer une adresse valide !";
+    } 
+    if(!filter_var($_POST["age"],FILTER_VALIDATE_INT)|| $_POST['age'] > 150 || $_POST['age'] < 0) {
+       
         $errors[] = "Entrer un age réel !";
+
     }
-    if(filter_var($_POST['link'], FILTER_VALIDATE_URL)) {
-        //$succes[] = "Yes url";
-    } else {
+    if(!filter_var($_POST['link'], FILTER_VALIDATE_URL)) {
+        
         $errors[] = "url de ton site pas valide !";
+    
     }
     if(!isset($errors)){
 
- 
         $welcome = "Vos données ont bien été récoltées, merci pour ça !";
     }
 }
