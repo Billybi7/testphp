@@ -16,11 +16,9 @@
 <?php
 
 
-for($i = 0; $i < 5000; $i++) {
-    // Au lieu d'afficher $i qui aura toujours 1 de retard, on affiche $i + 1 pour corriger ce décalage
-    echo '<li>'. ($i +1) .'</li>';
-}
-?>
+$fruits = array('Pomme', 'Fraise', 'Orange');
+
+$fruits = ['Pomme', 'Fraise', 'Orange']
 </ul>
 </body>
 </html>

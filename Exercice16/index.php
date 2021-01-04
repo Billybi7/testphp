@@ -1,22 +1,26 @@
 <?php
 if(isset($_POST['email']) && isset($_POST['age']) && isset($_POST['link'])){
 
+        // BLOC DE VERIF
 
-
+    // Doit eter email invalide d'ou le !
     if(!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
        
         $errors[] = "Entrer une adresse valide !";
     } 
+    // Doit eter age invalide d'ou le !
     if(!filter_var($_POST["age"],FILTER_VALIDATE_INT)|| $_POST['age'] > 150 || $_POST['age'] < 0) {
        
         $errors[] = "Entrer un age réel !";
 
     }
+    // Doit etre url invalide d'ou le !
     if(!filter_var($_POST['link'], FILTER_VALIDATE_URL)) {
         
         $errors[] = "url de ton site pas valide !";
     
     }
+    // Si pas d'erreur
     if(!isset($errors)){
 
         $welcome = "Vos données ont bien été récoltées, merci pour ça !";

@@ -22,6 +22,9 @@ $admin = false;
 
 
     <?php
+
+        // Même si la balise php se ferme avant la fermeture du if, le code html déclaré entre sera considéeé comme faisant partie de la condition.
+
     if($admin){
         ?>
         <p> Bienvenue dans votre domaine monsieur</p> <br> <a href=#>Lien externe</a>

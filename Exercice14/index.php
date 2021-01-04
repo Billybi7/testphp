@@ -1,6 +1,12 @@
 <?php
 setcookie('color', $_POST['color'], time() + 60*360, null, null, false, null);
 
+     if(isset($_POST['color'])) {
+        if(mb_strlen($_POST['color']) < 2 || mb_strlen($_POST['color']) > 10){
+            echo 'Erreur';
+        }
+     }    
+
 
 ?>
 
@@ -28,13 +34,7 @@ setcookie('color', $_POST['color'], time() + 60*360, null, null, false, null);
 </head>
 <body>
     
-<?php 
-     if(isset($_POST['color'])) {
-        if(mb_strlen($_POST['color']) < 2 || mb_strlen($_POST['color']) > 10){
-            echo 'Erreur';
-        }
-     }    
-?>
+
 
     <form action="index.php" method="POST">
     <input type="text" name="color" id="color" placeholder="Color in english">

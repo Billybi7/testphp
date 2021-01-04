@@ -26,10 +26,10 @@ while($i < 1){
     }
 }
 */
-while($i < 5000) {
+while($i <= 5000) {
     
-    echo '<li>'.++$i.'</li>';
-}
+    echo '<li>'.$i.'</li>';
+    $i++;
 ?>
 </ul>
 </body>

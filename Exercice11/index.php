@@ -7,12 +7,8 @@
 </head>
 <body>
     <h1>Accueil</h1>
-    <nav>
-        <ul>
-        <ul><a href="/index.php">Accueil</a></ul>
-        <ul><a href="/contact.php">Contact</a></ul>
-        <ul><a href="/shop.php">Boutique</a></ul>
-        </ul>
-    </nav>
+
+
+    <?php include 'menu.php'; ?>
 </body>
 </html>

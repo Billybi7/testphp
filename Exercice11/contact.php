@@ -7,5 +7,6 @@
 </head>
 <body>
     <h1>Contact</h1>
+    <?php include 'menu.php'; ?>
 </body>
 </html>

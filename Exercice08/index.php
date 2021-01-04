@@ -17,7 +17,7 @@
             'country' => 'france',
             'city' => 'strasbourg',
             'countrys' => [ 'visited' =>
-                'allemagne', 'maroc'
+                'allemagne', 'maroc','canada'
             ],
         ],
         [
@@ -69,8 +69,8 @@
                 <ul>
                 <?php
                 echo '<br><> Voici les pays visités : ';
-                    foreach($users as $visted){
-                       echo '<> ' .$user['countrys']["visited"]. '</>';
+                    foreach($user['countrys'] as $visited){
+                       echo '<li> ' .$visited. '</li>';
                     }
                 ?>
                 </ul>
@@ -81,6 +81,7 @@
         
     }
 }
+
 
     ?>
 </body>
